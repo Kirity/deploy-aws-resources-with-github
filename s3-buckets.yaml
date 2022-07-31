@@ -16,4 +16,8 @@ Resources:
           - Id: NoncurrentVersionExpirationInDays
             Status: Enabled
             NoncurrentVersionExpirationInDays: 1
-            ExpiredObjectDeleteMarker: true  
+            ExpiredObjectDeleteMarker: true
+          - Id: DeleteEDIlzAfter30days
+            Status: Enabled
+            ExpirationInDays: 30
+            Prefix: 'lz/edi-'    
