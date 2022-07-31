@@ -4,7 +4,7 @@ Resources:
   GitHubCFNDeployDemo:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: 'github-cfn-demo-bucket'
+      BucketName: github-cfn-demo-bucket
       AccessControl: Private
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
