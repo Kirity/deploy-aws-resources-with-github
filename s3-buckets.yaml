@@ -11,3 +11,9 @@ Resources:
         BlockPublicPolicy: true
         IgnorePublicAcls: true
         RestrictPublicBuckets: true
+      LifecycleConfiguration:
+        Rules:
+          - Id: NoncurrentVersionExpirationInDays
+            Status: Enabled
+            NoncurrentVersionExpirationInDays: 1
+            ExpiredObjectDeleteMarker: true  
