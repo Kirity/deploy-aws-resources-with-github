@@ -5,12 +5,12 @@ on:
      branches: [ main ]
    pull_request:
      branches: [ main ]
-   #workflow_dispatch:
-     #inputs:
-      #region:
-        #description: 'AWS Region to deploy to'
-        #required: true
-        #default: 'eu-west-1'
+   workflow_dispatch:
+     inputs:
+      region:
+        description: 'AWS Region to deploy to'
+        required: true
+        default: 'eu-west-1'
 
 jobs:
   # This workflow contains a single job called "deploy"
