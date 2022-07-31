@@ -35,6 +35,6 @@ jobs:
       - name: Deploy to AWS CloudFormation
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
-          name: s3-buckets
+          name: cloudformation-templates/s3-buckets
           template: s3-buckets.yaml
           no-fail-on-empty-changeset: "1"
